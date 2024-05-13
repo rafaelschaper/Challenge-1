@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>Decodificador</title>
+</head>
+<body>
+	<header>
+		<img src="./img/logo.png" alt="">
+	</header>
+
+	<div class="container">
+		<div class="main">
+
+			<div class="decoder">
+				<textarea type="text" id="text" class="input" placeholder="Digite seu texto"></textarea>
+				<p class="warning">
+					<img src="./img/icon.png" alt="aviso">
+					Apenas letras minúsculas e sem acento.
+				</p>
+				<div class="buttons">
+					<button id="btn1" class="btn encrypt">
+						Criptografar
+					</button>
+					<button id="btn2" class="btn decrypt">
+						Descriptografar
+					</button>
+				</div>
+			</div>
+
+			<div class="result">
+				<img id="img" src="./img/empty.png" alt="sem resultados">
+
+				<div class="txts">
+					<div class="txt">
+						<p id="txt1" class="txt1">Nenhuma mensagem encontrada</p>
+						<p id="txt2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+					</div>
+					<div class="result-txt">
+						<textarea readonly id="result" class="txt2"></textarea>
+					</div>
+				</div>
+				<button id="btn3" class="btn decrypt copy">
+                    Copiar
+                </button>
+			</div>
+
+		</div>
+	</div>
+
+	<footer class="footer">
+		<p>Desenvolvido por Rafael Reis Schaper</p>
+        <a href="https://github.com/rafaelschaper" target="_blank" rel=""><img src="./img/github.png" class="icon" alt="ícone do github"></a>
+        <a href="https://www.linkedin.com/in/rafaelschaper/" target="_blank" rel=""><img src="./img/linkedin.png" class="icon" alt="ícone do LinkedIn"></a>
+	</footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
